@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluGames</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body">
+    <main class="container main">
+        <img src="img/logo.svg" alt="Logo AluGames">
+        <section class="divisor">
+            <div class="divisor__line"></div>
+            <img src="img/fade_bar.svg" alt="Visual bar" class="divisor__bar">
+            <div class="divisor__line"></div>
+        </section>
+        <h1 class="page-title">Loja de <span class="page-title__emphasis">games</span></h1>
+        <section class="games">
+            <ul class="games__items">
+                <li class="games__items__item" id="game-1">
+                    <div class="games__item__img">
+                        <img src="img/re4_remake.png" alt="Capa Resident Evil 4 Remake">
+                    </div>
+                    <p class="games__item__name">Resident Evil 4 Remake</p>
+                    <a onclick="alterarStatus(1)" href="#" class="games__item__button">Comprar</a>
+                </li>
+                <li class="games__items__item" id="game-2">
+                    <div class="games__item__img">
+                        <img src="img/elden_ring.jpg" alt="Capa jogo Elden Ring">
+                    </div>
+                    <p class="games__item__name">Elden Ring</p>
+                    <a onclick="alterarStatus(2)" href="#" class="games__item__button">Comprar</a>
+                </li>
+                <li class="games__items__item" id="game-3">
+                    <div class="games__item__img games__item__img--purchased">
+                        <img src="img/gta6.jpg" alt="Capa jogo GTA 6">
+                    </div>
+                    <p class="games__item__name">Grand Theft Auto VI</p>
+                    <a onclick="alterarStatus(3)" href="#" class="games__item__button games__item__button--return">Comprado</a>
+                </li>
+            </ul>
+        </section>
+        <img src="img/hachuras.svg" alt="Visual hachuras" class="hachuras">
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
